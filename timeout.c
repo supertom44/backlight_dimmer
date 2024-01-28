@@ -99,9 +99,9 @@ int main(int argc, char* argv[]){
         sleepTime.tv_sec = 0;
         sleepTime.tv_nsec = 100000000L;  /* 1 seconds - larger values may reduce load even more */
 
-	char actual[53] = "/sys/class/backlight/rpi_backlight/actual_brightness";
-	char max[50] = "/sys/class/backlight/rpi_backlight/max_brightness";
-  	char bright[46] = "/sys/class/backlight/rpi_backlight/brightness";
+	char actual[53] = "/sys/class/backlight/10-0054/actual_brightness";
+	char max[50] = "/sys/class/backlight/10-0054/max_brightness";
+  	char bright[46] = "/sys/class/backlight/10-0054/brightness";
 
 	brightfd = fopen(bright, "w");
         if(brightfd == NULL){
